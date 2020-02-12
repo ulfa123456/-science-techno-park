@@ -15,8 +15,6 @@
 	  'https://connect.facebook.net/en_US/fbevents.js');
 	  fbq('init', '496776587923480');
 	  fbq('track', 'PageView');
-// 	  fbq('track', 'Contact');
-// 	  fbq('track', 'AddToCart');
 	</script>
 	<noscript><img height="1" width="1" style="display:none"
 	  src="https://www.facebook.com/tr?id=496776587923480&ev=PageView&noscript=1"
@@ -27,13 +25,18 @@
 
 
 	<h1>Halooooo</h1>
-	<a href="https://wa.me/62895340952989?text=Saya%20tertarik%20untuk%20membeli%20mobil%20Anda" target="_blank"><button>Whatapp</button></a>
+	<a href="https://wa.me/62895340952989?text=Saya%20tertarik%20untuk%20membeli%20mobil%20Anda" target="_blank" id="pesan"><button>Pesan sekarang</button></a>
 	
 	<a href="https://www.youtube.com/" target="_blank" id="addToCartButton"><button>Add to cart</button></a>
 
 <script type="text/javascript">
 document.getElementById('addToCartButton').addEventListener('click', function() {
   fbq('track', 'AddToCart');
+}, false);
+	
+
+document.getElementById('pesan').addEventListener('click', function() {
+  fbq('track', 'Contact');
 }, false);
 </script>
 
