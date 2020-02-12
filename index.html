@@ -29,10 +29,12 @@
 	<h1>Halooooo</h1>
 	<a href="https://wa.me/62895340952989?text=Saya%20tertarik%20untuk%20membeli%20mobil%20Anda" target="_blank"><button>Whatapp</button></a>
 	
-	<a href="https://www.youtube.com/" target="_blank"><button>Add to cart</button></a>
+	<a href="https://www.youtube.com/" target="_blank" id="addToCartButton"><button>Add to cart</button></a>
 
-<script>
+<script type="text/javascript">
+document.getElementById('addToCartButton').addEventListener('click', function() {
   fbq('track', 'AddToCart');
+}, false);
 </script>
 
 </body>
