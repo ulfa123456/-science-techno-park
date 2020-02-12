@@ -27,9 +27,12 @@
 
 
 	<h1>Halooooo</h1>
-	<a href="https://wa.me/62895340952989?text=Saya%20tertarik%20untuk%20membeli%20mobil%20Anda" target="_blank" id="pesan"><button>Pesan sekarang</button></a>
+	<a href="https://wa.me/62895340952989?text=Saya%20tertarik%20untuk%20membeli%20mobil%20Anda" target="_blank" class="pesan"><button>Pesan sekarang</button></a>
 	
+	<a href="https://wa.me/62895340952989?text=Saya%20tertarik%20untuk%20membeli%20mobil%20Anda" target="_blank" class="pesan"><button>Pesan sekarang dong</button></a>
+
 	<a href="https://www.youtube.com/" target="_blank" id="addToCartButton"><button>Add to cart</button></a>
+	
 
 <script type="text/javascript">
 document.getElementById('addToCartButton').addEventListener('click', function() {
@@ -37,7 +40,7 @@ document.getElementById('addToCartButton').addEventListener('click', function() 
 }, false);
 	
 
-document.getElementById('pesan').addEventListener('click', function() {
+document.getElementsByClassName('pesan').addEventListener('click', function() {
   fbq('track', 'Contact');
 }, false);
 </script>
