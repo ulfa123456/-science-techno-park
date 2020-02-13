@@ -32,6 +32,20 @@
 	<a href="https://wa.me/62895340952989?text=Saya%20tertarik%20untuk%20membeli%20mobil%20Anda" target="_blank" class="pesan"><button>Pesan sekarang dong</button></a>
 
 	<a href="https://www.youtube.com/" target="_blank" id="addToCartButton"><button>Add to cart</button></a>
+	
+	<a href="https://www.youtube.com/" target="_blank" id="subscribeButton"><button>Subscribe</button></a>
 
+	
+<script type="text/javascript">
+document.getElementById('subscribeButton').addEventListener('click', function() {
+
+  fbq('track', 'Subscribe', {
+    value: 110000,
+    currency: 'IDR',
+  });
+	
+}, false);
+</script>
+	
 </body>
 </html>
